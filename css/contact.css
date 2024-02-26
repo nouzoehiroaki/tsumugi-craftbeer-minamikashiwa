@@ -1,0 +1,90 @@
+table.CF7_table{
+	width:100%;
+	margin:0 auto;
+	border: 3px solid #e5e5e5;
+    text-align: left;
+}
+table.CF7_table tr{
+	border-top: 1px solid #e5e5e5;
+}
+.CF7_table td,
+.CF7_table th{
+    padding: 20px;
+}
+/*入力欄*/
+.CF7_table input,
+.CF7_table textarea {
+	border: 1px solid #d8d8d8;
+    padding: 20px;
+    width: 100%;
+}
+.CF7_table ::placeholder {
+	color:#797979;
+}
+/*「必須」文字*/
+.CF7_req{
+	font-size:.9em;
+	padding: 5px;
+	background: #e60113;
+	color: #fff;
+	border-radius: 3px;
+	margin-right:1em;
+}
+/*「任意」文字*/
+.CF7_unreq{
+	font-size:.9em;
+	padding: 5px;
+	background: #bdbdbd;/*グレー*/
+	color: #fff;
+	border-radius: 3px;
+	margin-right:1em;
+}
+textarea {
+  resize: none;
+}
+/* タイトル列 */
+@media screen and (min-width: 768px){
+	.CF7_table th{
+    	width:30%;/*横幅*/
+    	background-color:#ebedf5;/*ブルーグレー*/
+	}
+}
+/* レスポンシブ */
+@media screen and (max-width: 768px){
+	table.CF7_table{
+	    width:100%;
+	}
+	.CF7_table tr,
+    .CF7_table td,
+    .CF7_table th{
+	    display: block;
+	    width: 100%;
+	    line-height:2.5em;
+	}
+	.CF7_table th{
+	    background-color:#ebedf5;
+	}
+}
+/* 「送信する」ボタン */
+.wpcf7 input.wpcf7-submit {
+	background-color:#e60113;
+	border:0;
+	color:#fff;
+	font-size:1.2em;
+	font-weight:bold;
+	margin:0 auto;
+    padding: 10px 0px;
+    border-radius: 20px;
+    width: 200px;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+}
+.CF7_btn{
+	text-align:center;
+	margin-top:20px;
+}
+.wpcf7-spinner{
+	width:0;
+	margin:0;
+}
